@@ -102,7 +102,7 @@ resource "azurerm_virtual_machine" "vm" {
         os_profile {
         computer_name           = "demoVM"
         admin_username          = "kosta"
-        admin_password          = "Demopassword72"
+        admin_password          = ""
 }
         os_profile_linux_config {
                 disable_password_authentication = false
