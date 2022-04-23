@@ -7,6 +7,7 @@ terraform {
     }
   }
   backend "azurerm"{
+    use_microsoft_graph = true
 	resource_group_name = "terraform"
 	storage_account_name = "terraformsgkosta"
 	container_name = "tfstate"
@@ -16,7 +17,6 @@ terraform {
 
 provider "azurerm" {
     features {}
-    use_microsoft_graph = true
     subscription_id = var.subscription_id
     client_id = var.client_id
     client_secret = var.client_secret
