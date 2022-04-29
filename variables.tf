@@ -22,3 +22,11 @@ variable "location" {
   type    = string
   default = "west europe"
 }
+variable "kvName" {
+  type    = string
+  default = ""
+}
+variable "lawMDCName" {
+  type    = string
+  default = ""
+}
